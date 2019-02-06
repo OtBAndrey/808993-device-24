@@ -10,14 +10,16 @@
   			<a class="main-header-logo" href="index.html">
   			<img src="img/logo.svg" width="163" height="35" alt="Девайс">
   		</a>
-  		
+
+  	<nav class="user-navigation">
   		<ul class="user-block">
   			<li class="search">Поиск по сайту</li>
   			<li class="username"><a href="#">Валентин петухов</a></li>
-  			<li class="logout"><a href="#">Выйти</a></li>
+  			<li class="logout"><a href="index.html">Выйти</a></li>
   			<li class="compare"><a href="#">Сравнить</a></li>
   			<li class="basket"><a href="#">Корзина</a></li>
   		</ul>
+    </nav>
 
   		<nav class="main-navigation">
   			<ul class="site-navigation">
@@ -40,7 +42,54 @@
 
   		<section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-check-box" type="checkbox" id="filter-black" name="black" checked>
+                <label for="filter-black">Черный</label>
+              </li>
+
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-check-box" type="checkbox" id="filter-white" name="white">
+                <label for="filter-white">Белый</label>
+              </li>
+
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-check-box" type="checkbox" id="filter-blue" name="blue" checked>
+                <label for="filter-blue">Синий</label>
+              </li>
+
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-check-box" type="checkbox" id="filter-red" name="red" checked>
+                <label for="filter-red">Красный</label>
+              </li>
+
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-check-box" type="checkbox" id="filter-pink" name="pink">
+                <label for="filter-pink">Розовый</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Bluetooth</legend>   
+            <ul>
+
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" id="filter-yes" name="availability" value="yes"> 
+            <label for="filter-yes">Есть</label>
+          </li>
+
+            <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-radio" type="radio" id="filter-no" name="availability" value="no"> 
+            <label for="filter-no">Нет</label>
+          </li>
+          </ul>         
+          </fieldset>
+          <button type="submit" class="filter-button button">Показать</button>
+       </form>   
       </section>
 
       <section class="catalog">
@@ -108,7 +157,7 @@
 
   		<ul class="footer-user-block">
   			<li class="username"><a href="#">Валентин Петухов</a></li>
-  			<li class="logout"><a href="#">Выйти</a>
+  			<li class="logout"><a href="index.html">Выйти</a>
   			<li class="compare"><a href="#">Сравнить</a></li>
   			<li class="basket"><a href="#">Корзина</a></li>
   		</ul>
@@ -141,33 +190,35 @@
 
   		<a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
   	</footer> 
+
+    <section class="modal-write-us">
+      <form class="write-us-form" action="https://echo.htmlacademy.ru"  method="post">
+        <p>
+          <label for="name">Ваше имя</label>
+          <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+        </p>
+
+        <p>
+          <label for="email">Ваш e-mail:</label>
+          <input type="text" name="email" id="email" placeholder="email@example.com">
+        </p>
+
+        <p>
+          <label for="comment-field">Текст письма</label>
+          <textarea name="comment" id="comment-field" rows="8" cols="85" placeholder="В свободной форме"></textarea>
+        </p>
+
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map-big.jpg" width="994" height="593" alt="Офис компании по адерсу ул. Строителей, дом 15, Санкт-Петербург">
+      </p>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </body>
-  </html>
