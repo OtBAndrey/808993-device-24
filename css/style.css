@@ -1,0 +1,246 @@
+body {
+	margin: 0;
+
+	font-family: "Open Sans, "Arial", sans-serif"
+	font-size: 15px;
+	line-height: 30px;
+	color: #464646;
+
+	background-color: #ffffff;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0 !important;
+	border: 0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.header-columns {
+  background-color: #f7e296;
+}
+
+.search input {
+  background-color: transparent;
+  border: none;
+}
+
+
+.user-block,
+.site-navigation,
+.footer-user-block,
+.footer-site-navigation {
+  list-style: none;
+}
+
+.user-block a {
+  color: #272525;
+}
+
+.user-block a:hover,
+.user-block a:focus,
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #484337;
+}
+
+.user-block a:active,
+.site-navigation a:active {
+  color: #b8a974;
+}
+
+.site-navigation a {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 47px;
+  line-height: 48px;
+  color: #000000;
+}
+
+h2 {
+  font-size: 47px;
+  line-height: 56px;
+  color: #000000;
+}
+
+.button {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #f0c52e;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+th {
+  font-size: 36px;
+  line-height: 48px;
+  color: #000000;
+  font-weight: normal;
+}
+
+td {
+  font-size: 13px;
+}
+
+.category-list {
+  list-style: none;
+}
+
+.category-list a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.features h2 {
+  font-size: 47px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.brands-list {
+  list-style: none;
+}
+
+.info h2,
+.contacts h2 {
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.companies {
+  list-style: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+
+.main-footer {
+  background-color: #464646;
+}
+
+.footer-adress,
+.footer-contacts {
+  color: #ffffff;
+}
+
+.footer-user-block a {
+  font-size: 15px;
+  line-height: 36px;
+  color: #949494;
+}
+
+.footer-site-navigation a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+label {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.write-us-form input,
+.write-us-form textarea {
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.breadcrumbs {
+  list-style: none;
+  font-size: 14px;
+  line-height: 24px;
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: #b2b2b2;
+}
+
+.filters h3,
+.catalog h3  {
+  font-size: 16px
+  line-height: 224px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.filters label {
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: normal;
+}
+
+legend {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: bold;
+}
+
+
+.filters ul {
+  list-style: none;
+}
+
+.sorting a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.sorting .current{
+  color: #adadad;
+}
+
+.catalog-list {
+  list-style: none;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.catalog-item a {
+  color: #000000;
+}
+
+.price {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.paginator {
+  background-color: #ebebeb;
+}
+
+.paginator a {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.paginator .current {
+  color: #adadad;
+}
