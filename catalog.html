@@ -1,241 +1,267 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-  	<header class="main-header">
-  		<div class="container">
-  			<a class="main-header-logo" href="index.html">
-  			<img src="img/logo.svg" width="163" height="35" alt="Девайс">
-  		</a>
-  <div class="header-columns">
-  	<nav class="user-navigation">
-  		<ul class="user-block">
-  			<li class="search">Поиск по сайту</li>
-  			<li class="username"><a href="#">Валентин петухов</a></li>
-  			<li class="logout"><a href="index.html">Выйти</a></li>
-  			<li class="compare"><a href="#">Сравнить</a></li>
-  			<li class="basket"><a href="#">Корзина</a></li>
-  		</ul>
-    </nav>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <a class="main-header-logo" href="index.html">
+        <img src="img/logo.svg" width="163" height="35" alt="Девайс">
+      </a>
+      <div class="header-columns">
+        <nav class="user-navigation">
+          <ul class="user-block">
+            <li class="search">Поиск по сайту</li>
+            <li class="username">
+              <a href="#">Валентин петухов</a>
+            </li>
+            <li class="logout">
+              <a href="index.html">Выйти</a>
+            </li>
+            <li class="compare">
+              <a href="#">Сравнить</a>
+            </li>
+            <li class="basket">
+              <a href="#">Корзина</a>
+            </li>
+          </ul>
+        </nav>
 
-  		<nav class="main-navigation">
-  			<ul class="site-navigation">
-  				<li><a href="#">Каталог товаров</a></li>
-  				<li><a href="#">Доставка</a></li>
-  				<li><a href="#">Гарантия</a></li>
-  				<li><a href="#">Контакты</a></li>
-  			</ul>
-  		</nav>
-  	</div>
-  </div>
-  	</header>
-  	<main class="container">
-  		<h1>Моноподы для селфи</h1>
+        <nav class="main-navigation">
+          <ul class="site-navigation">
+            <li>
+              <a href="#">Каталог товаров</a>
+            </li>
+            <li>
+              <a href="#">Доставка</a>
+            </li>
+            <li>
+              <a href="#">Гарантия</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <h1>Моноподы для селфи</h1>
+    <ul class="breadcrumbs">
+      <li>
+        <a href="index.html">Главная</a>
+      </li>
+      <li class="arrow">right</li>
+      <li>
+        <a href="#">Каталог товаров</a>
+      </li>
+      <li class="arrow">right</li>
+      <li>
+        <a href="#">Моноподы для селфи</a>
+      </li>
+    </ul>
 
-  		<ul class="breadcrumbs">
-  			<li><a href="index.html">Главная</a></li>
-        <span class="arrow">right</span>
-  			<li><a href="#">Каталог товаров</a></li>
-        <span class="arrow">right</span>
-  			<li><a href="#">Моноподы для селфи</a></li>
-  		</ul>
-
-  		<section class="filters">
-        <h3>Фильтр:</h3>
-        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
-            <legend>Цвет</legend>
-            <ul>
-              <li class="filter-option">
-                <input class="filter-input filter-input-check-box" type="checkbox" id="filter-black" name="black" checked>
-                <label for="filter-black">Черный</label>
-              </li>
-
-              <li class="filter-option">
-                <input class="filter-input filter-input-check-box" type="checkbox" id="filter-white" name="white">
-                <label for="filter-white">Белый</label>
-              </li>
-
-              <li class="filter-option">
-                <input class="filter-input filter-input-check-box" type="checkbox" id="filter-blue" name="blue" checked>
-                <label for="filter-blue">Синий</label>
-              </li>
-
-              <li class="filter-option">
-                <input class="filter-input filter-input-check-box" type="checkbox" id="filter-red" name="red" checked>
-                <label for="filter-red">Красный</label>
-              </li>
-
-              <li class="filter-option">
-                <input class="filter-input filter-input-check-box" type="checkbox" id="filter-pink" name="pink">
-                <label for="filter-pink">Розовый</label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset>
-            <legend>Bluetooth</legend>
-            <ul>
+    <section class="filters">
+      <h3>Фильтр:</h3>
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Цвет</legend>
+          <ul>
+            <li class="filter-option">
+              <input type="checkbox" id="filter-black" name="black" checked>
+              <label for="filter-black">Черный</label>
+            </li>
 
             <li class="filter-option">
-              <input class="filter-input filter-input-radio" type="radio" id="filter-yes" name="availability" value="yes" checked="">
+              <input type="checkbox" id="filter-white" name="white">
+              <label for="filter-white">Белый</label>
+            </li>
+
+            <li class="filter-option">
+              <input type="checkbox" id="filter-blue" name="blue" checked>
+              <label for="filter-blue">Синий</label>
+            </li>
+
+            <li class="filter-option">
+              <input type="checkbox" id="filter-red" name="red" checked>
+              <label for="filter-red">Красный</label>
+            </li>
+
+            <li class="filter-option">
+              <input type="checkbox" id="filter-pink" name="pink">
+              <label for="filter-pink">Розовый</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <ul>
+
+            <li class="filter-option">
+              <input type="radio" id="filter-yes" name="availability" value="yes" checked>
               <label for="filter-yes">Есть</label>
-          </li>
+            </li>
 
             <li class="filter-option">
-              <input class="filter-input filter-input-radio" type="radio" id="filter-no" name="availability" value="no">
+              <input type="radio" id="filter-no" name="availability" value="no">
               <label for="filter-no">Нет</label>
             </li>
           </ul>
-          </fieldset>
-          <button type="submit" class="filter-button button">Показать</button>
-       </form>
-      </section>
+        </fieldset>
+        <button type="submit" class="filter-button button">Показать</button>
+      </form>
+    </section>
 
-      <section class="catalog">
-        <div class="sorting">
-          <h3>Сортировка</h3>
-          <a href="#">По цене</a>
-          <a href="#" class="current">По типу</a>
-          <a href="#" class="current">По популярности</a>
-          <span>arrow</span>
-          <span>arrow</span>
-        </div>
+    <section class="catalog">
+      <div class="sorting">
+        <h3>Сортировка</h3>
+        <a href="#">По цене</a>
+        <a href="#" class="current">По типу</a>
+        <a href="#" class="current">По популярности</a>
+        <span>arrow</span>
+        <span>arrow</span>
+      </div>
 
-        </div>
-      	<ul class="catalog-list">
+      <ul class="catalog-list">
 
-      		<li class="catalog-item">
-      			<h3>
-      			<a href="catalog-item.html">Любительская селфи-палка</a>
-      		</h3>
-      		<span class="price">500 руб</span>
-      		<p>
-      			<img src="img/catalog-item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-      		</p>
-      		</li>
+        <li class="catalog-item">
+          <h3>
+            <a href="catalog-item.html">Любительская селфи-палка</a>
+          </h3>
+          <span class="price">500 руб</span>
+          <p>
+            <img src="img/catalog-item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+          </p>
+        </li>
 
-      		<li class="catalog-item">
-      			<h3>
-      			<a href="catalog-item.html">Профессиональная<br>селфи-палка</a>
-      		</h3>
-      		<span class="price">1 500 руб</span>
-      		<p>
-      			<img src="img/catalog-item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-      		</p>
-      		</li>
+        <li class="catalog-item">
+          <h3>
+            <a href="catalog-item.html">Профессиональная<br>селфи-палка</a>
+          </h3>
+          <span class="price">1 500 руб</span>
+          <p>
+            <img src="img/catalog-item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+          </p>
+        </li>
 
-      		<li class="catalog-item">
-      			<h3>
-      			<a href="catalog-item.html">Непотопляемая селфи-палка</a>
-      		</h3>
-      		<span class="price">2 500 руб</span>
-      		<p>
-      			<img src="img/catalog-item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-      		</p>
-      		</li>
+        <li class="catalog-item">
+          <h3>
+            <a href="catalog-item.html">Непотопляемая селфи-палка</a>
+          </h3>
+          <span class="price">2 500 руб</span>
+          <p>
+            <img src="img/catalog-item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+          </p>
+        </li>
 
-      		<li class="catalog-item">
-      			<h3>
-      			<a href="catalog-item.html">Селфи-палка «Следуй за мной»</a>
-      		</h3>
-      		<span class="price">4 900 руб</span>
-      		<p>
-      			<img src="img/catalog-item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-      		</p>
-      		</li>
-      	</ul>
+        <li class="catalog-item">
+          <h3>
+            <a href="catalog-item.html">Селфи-палка «Следуй за мной»</a>
+          </h3>
+          <span class="price">4 900 руб</span>
+          <p>
+            <img src="img/catalog-item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+          </p>
+        </li>
+      </ul>
 
-        <div class="paginator">
-          <a class="prev" href="#prev">Назад</a>
-          <a href="#1">1</a>
-          <a href="#2" class="current">2</a>
-          <a href="#3" class="current">3</a>
-          <a class="next" href="#next">Вперёд</a>
-        </div>
+      <div class="paginator">
+        <a class="prev" href="#prev">Назад</a>
+        <a href="#1">1</a>
+        <a href="#2" class="current">2</a>
+        <a href="#3" class="current">3</a>
+        <a class="next" href="#next">Вперёд</a>
+      </div>
 
-      </section>
+    </section>
 
-  	</main>
+  </main>
 
-  	<footer class="main-footer">
-     <a class="footer-logo">
-       <img src="img/logo-footer.svg" width="163" height="35" alt="Device">
-     </a>
+  <footer class="main-footer">
+    <a class="footer-logo">
+      <img src="img/logo-footer.svg" width="163" height="35" alt="Device">
+    </a>
     <p class="footer-adress">г. Москва, ул. Строителей 15</p>
 
-     <ul class="footer-user-block-navigation">
-      <ul class="footer-user-block">
-        <li class="name">Валентин Петухов</li>
-        <li class="logout"><a href="#">Выйти</a></li>
-        <li class="compare"><a href="#">Сравнить</a></li>
-        <li class="basket"><a href="#">Корзина</a></li>
-      </ul>
-     </ul>
+    <ul class="footer-user-block">
+      <li>Валентин Петухов</li>
+      <li>
+        <a href="#">Выйти</a>
+      </li>
+      <li>
+        <a href="#">Сравнить</a>
+      </li>
+      <li>
+        <a href="#">Корзина</a>
+      </li>
+    </ul>
 
-      <ul class="footer-navigation">
-        <ul class="footer-site-navigation">
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </ul>
+    <ul class="footer-site-navigation">
+      <li>
+        <a href="#">Доставка</a>
+      </li>
+      <li>
+        <a href="#">Гарантия</a>
+      </li>
+      <li>
+        <a href="#">Контакты</a>
+      </li>
+    </ul>
 
-
-        <ul class="footer-social">
-         <li>
-          <a class="social-button social-button-vk" href="#"></a>
-        </li>
-
-        <li>
-          <a class="social-button social-button-inst" href="#"></a>
-        </li>
+    <ul class="footer-social">
+      <li>
+        <a class="social-button vk" href="#"></a>
+      </li>
 
       <li>
-        <a class="social-button social-button-tw" href="#"></a>
+        <a class="social-button inst" href="#"></a>
+      </li>
+
+      <li>
+        <a class="social-button twitter" href="#"></a>
       </li>
     </ul>
 
 
-      <p class="footer-contacts">Тел: +7 (495) 495-95-95</p>
+    <p class="footer-contacts">Тел: +7 (495) 495-95-95</p>
+    <a href="https://htmlacademy.ru/intensive/htmlcss" class="logo"></a>
+  </footer>
 
-      <a href="https://htmlacademy.ru/intensive/htmlcss" class="logo"></a>
-    </footer>
-
-    <section class="modal-write-us">
-      <form class="write-us-form" action="https://echo.htmlacademy.ru"  method="post">
-        <p>
-          <label for="name">Ваше имя</label>
-          <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-        </p>
-
-        <p>
-          <label for="email">Ваш e-mail:</label>
-          <input type="text" name="email" id="email" placeholder="email@example.com">
-        </p>
-
-        <p>
-          <label for="comment-field">Текст письма</label>
-          <textarea name="comment" id="comment-field" rows="8" cols="85" placeholder="В свободной форме"></textarea>
-        </p>
-
-        <button class="button" type="submit">Отправить</button>
-      </form>
-      <button class="modal-close" type="button">Закрыть</button>
-    </section>
-
-    <section class="modal modal-map">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
+  <section class="modal-write-us">
+    <form class="write-us-form" action="https://echo.htmlacademy.ru"  method="post">
       <p>
-        <img src="img/map-big.jpg" width="994" height="593" alt="Офис компании по адерсу ул. Строителей, дом 15, Санкт-Петербург">
+        <label for="name">Ваше имя</label>
+        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
       </p>
-      <button class="modal-close" type="button">Закрыть</button>
-    </section>
-  </body>
+
+      <p>
+        <label for="email">Ваш e-mail:</label>
+        <input type="text" name="email" id="email" placeholder="email@example.com">
+      </p>
+
+      <p>
+        <label for="comment-field">Текст письма</label>
+        <textarea name="comment" id="comment-field" rows="8" cols="85" placeholder="В свободной форме"></textarea>
+      </p>
+
+      <button class="button" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
+
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <p>
+      <img src="img/map-big.jpg" width="994" height="593" alt="Офис компании по адерсу ул. Строителей, дом 15, Санкт-Петербург">
+    </p>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
+</body>
 </html>
