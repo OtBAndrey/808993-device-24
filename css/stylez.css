@@ -1,0 +1,27 @@
+.slider-item {
+  display: flex;
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.slider-item img {
+  position: relative;
+  bottom: 100px;
+  margin-right: 120px;
+}
+
+.slider-item p {
+  margin-bottom: 60px;
+}
+
+.slider-info {
+  position: relative;
+  bottom: 35px;
+}
+
+.slider-info a {
+  display: block;
+  width: 220px;
+  margin-bottom: 75px;
+  text-align: center;
+}
